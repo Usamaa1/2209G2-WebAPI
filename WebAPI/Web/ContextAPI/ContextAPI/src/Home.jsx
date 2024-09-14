@@ -3,7 +3,7 @@ import { GlobalContext } from './context';
 
 
 
-function App() {
+function Home() {
 
   let {state, dispatch} = useContext(GlobalContext);
   console.log(state);
@@ -25,11 +25,11 @@ useEffect(()=>{
 
   return (
     <>
-    <h1>Age: {age}</h1>
     <h1>User Name: {username}</h1>
+    <h1>Age: {age}</h1>
      
     </>
   )
 }
 
-export default App
+export default Home
